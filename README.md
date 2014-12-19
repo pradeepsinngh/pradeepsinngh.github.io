@@ -1,4 +1,4 @@
-# KingSidharth.com
+# pradeepsinngh.github.io
 
 Source code of my personal website. Built with [Jekyll](http://jekyllrb.com) &  and served from [GitHub](http://github.com).
 

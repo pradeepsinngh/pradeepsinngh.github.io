@@ -6,8 +6,6 @@ Source code of this website is from Sidharth (Thanks a lot to him for keeping it
 
  Hey my photos and many others things aren't open source. So all fair **use for learning & reference purposes** is good to go!
 
-* Content & Photographs are copyrighted.
-* CSS & JS is not.
 
 ## Using
 

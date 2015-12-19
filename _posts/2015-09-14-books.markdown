@@ -1,0 +1,31 @@
+---
+layout: post-note
+title:  Good Books
+date:   2015-09-14
+categories: [notes]
+
+---
+
+I read lots of books! I'm trying to read 100 books a year. Here are some of my favorites.
+
+## Fiction
+
+* The World According to Garp - John Irving
+
+* The Blind Assassin - Margaret Atwood
+
+* 1Q84 - Haruki Murakami
+
+* Unaccustomed Earth - Jhumpa Lahiri
+
+* The Brief Wondrous Life of Oscar Wao - Junot Diaz
+
+* 100 Years of Solitude - Gabriel Garcia Marquez
+
+## Non-fiction
+
+* The Philosophy of Andy Warhol - Andy Warhol
+
+* Understanding Media: The Extensions of Man - Marshall McLuhan
+
+

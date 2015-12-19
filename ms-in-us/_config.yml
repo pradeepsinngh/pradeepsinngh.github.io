@@ -1,13 +1,13 @@
 markdown: kramdown
 highlighter: pygments
 permalink: /:categories/:title
-timezone: America/Seattle
+timezone: India/Kolkata
 categories: [blog,notes,writing]
-# baseurl: "http://amritamaz.net/"
+# baseurl: "http://pradeepsingh.xyz/"
 
-name: Amrita Mazumdar
-author: Amrita Mazumdar
-title: 'Amrita Mazumdar'
-email: amritamaz@gmail.com
-twitter: '@amritamaz'
-description: 'Amrita Mazumdar, computer science PhD student and creative person.'
+name: Pradeep Singh
+author: Pradeep Singh
+title: 'Pradeep Singh'
+email: contact@pradeepsingh.xyz
+twitter: '@nomadic_enggr'
+description: 'Pradeep Singh is an Young Entreprenuer, Writer based out of Mumbai and presently working in a Research Institute.'

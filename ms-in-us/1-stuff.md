@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Stuff
-permalink: /stuff/
+title: GRE
+permalink: /GRE/
 ---
 
 stuff = {'matter of an unspecified kind', 'the intermediate stage between pulp and paper', 'any material partly formed'}

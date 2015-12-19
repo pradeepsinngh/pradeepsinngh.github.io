@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+
+    <div class="page-content">
+        {% include header.html %}
+
+      <div class="wrapper">
+
+
+        {% include nav.html %}
+
+        <div class="content">
+          <div class="post">
+
+            <header class="post-header">
+              <p class="post-meta">(last updated {{ page.date | date: "%b %-d %Y" }})</p>
+            </header>
+
+            <article class="post-content">
+              {{ content }}
+            </article>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

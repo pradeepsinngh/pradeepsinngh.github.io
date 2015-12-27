@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="poem {{page.slug}} main-body grid__item one-whole">
+  <div class="headline_area">
+    <h1 class="entry-title">{{ page.title }}</h1>
+    <h2 class="sub-title">{{ page.subtitle }}</h2>
+  </div>
+
+  <div class="poem_body">
+    {{ content }}  
+  </div><!-- poem_body -->
+  <div class="meta">
+    <p class="date">on <span>{{ page.date | date: "%d %B, %Y"}}</span></p>
+    {% if page.intro %}
+    <p class="intro">{{ page.intro }}</p> 
+    {% endif %}
+  </div><!-- meta -->
+
+</div><!-- page -->

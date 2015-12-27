@@ -1,0 +1,31 @@
+# Jekyll configuration precedence:
+# 1. Gruntfile task
+# 2. config.build.yml
+# 3. config.yml
+
+name: King Sidharth
+permalink: /:categories/:title
+url: http://www.kingsidharth.com
+author:
+  name: King Sidharth
+  email: king.sidharth@yahoo.com
+
+# Grunt handles images and assets.
+exclude: ['images', 'css', 'js', 'fonts',
+          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico', 'Readme.md', ]
+
+include: ['.htaccess']
+
+# _config.build.yml sets future and show_drafts to false on `grunt build`
+future: true
+show_drafts: true
+
+# Markdown library
+markdown: maruku
+#   use_tex:    false
+#   use_divs:   false
+#   png_engine: blahtex
+#   png_dir:    images/latex
+#   png_url:    /images/latex
+
+pygments: false

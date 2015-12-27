@@ -1,0 +1,83 @@
+// Overriding Defaults of inuit.css
+
+html {
+  @include media-query(palm) {
+    font-size: 15px;
+  }
+}
+
+body {
+  @extend .text--center;
+  background: $black;
+  color: $white;
+
+  .serif {
+    font-family: $serif;
+  }
+
+  h1:not(#logo), h2, h3, h4, h5, h6 {
+    @extend .serif;
+       margin-top: $base-spacing-unit;
+    margin-bottom: $base-spacing-unit/2;
+    font-weight: normal;
+  }
+
+}
+
+
+// Text Selection
+::selection {
+  background: $blue;
+  color: $white;
+}
+
+
+// Navigation
+.nav {
+  letter-spacing: normal;
+  word-spacing: normal;
+  li {
+    margin-bottom: 0px;
+  }
+}
+
+
+// Links
+a {
+  color: $blue;
+  text-decoration: none;
+  border-bottom: 1px dotted $blue;
+  &:hover, &:active {
+    border-bottom-style: solid;
+  }
+  &:active {
+    border-bottom-color: adjust-lightness($blue, -10%);
+    color: adjust-lightness($blue, -10%);
+  }
+}
+
+// Square bullet points
+ul {
+  list-style-type: square;
+  margin-left: 2rem;
+  @include media-query(palm) {
+    margin-left: 1rem;
+    li {
+      margin-bottom: $base-spacing-unit/2;
+    }
+  }
+}
+
+
+.nav--spaced {
+  li {
+    margin-left: $base-spacing-unit/8;
+    margin-right: $base-spacing-unit/8;
+    &:first-child, &.first {
+      margin-left: 0px;
+    }
+    &:last-child, &.last {
+      margin-right: 0px;
+    }
+  }
+}

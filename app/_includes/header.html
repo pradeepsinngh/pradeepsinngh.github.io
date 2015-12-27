@@ -1,0 +1,32 @@
+
+{% if page.slug == 'home' %}
+  <div id="first_screen">
+{% endif %}
+
+<header id="header_area" class="grid" style="background-image: url({% if page.backgroundurl %}'{{page.backgroundurl}}'{% else %}'/images/backgrounds/{{page.background}}'{%endif%});">
+  <div class="page" >
+    <div id="header">
+      <div id="banner" class="grid__item two-fifths palm-one-whole">
+        {% if page.slug == 'home' %}
+        <h1 id='logo'>King <strong>Sidharth</strong></h1>
+        {% else %}
+          <div id='logo'><a href="/">King <strong>Sidharth</strong></a></div>      
+        {% endif %}
+      </div><!-- #banner
+      --><nav id="main_navigation" class="navbar grid__item three-fifths palm-one-whole desk-right">
+      <ul class="nav nav--spaced palm-nav--stacked no-bottom-margin" data-nav-title="Navigation">
+        {% include nav_items.html %} 
+      </ul>
+      </nav>
+
+      {% if page.slug == 'home' %}
+      <p class="tagline text--center no-bottom-margin grid__item one-whole beta">
+      <span class="delta">conciousness thinking itself into being</span>
+      <span class="highlight block">Entrepreneur, Designer, Artist <span class="amp">&amp;</span> Public Speaker</span>
+      <span class="delta">from <strong>Mumbai, India</strong></span></p>
+      {% endif %}
+
+      
+    </div>
+  </div>
+</header>

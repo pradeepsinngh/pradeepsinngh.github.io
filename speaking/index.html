@@ -1,0 +1,35 @@
+---
+layout: page 
+title: Talks 
+slug: speaking
+---
+<p>I like to talk. Quite a much. I love to talk about <strong>  entrepreneurship &amp; life philosophy</strong> or <strong>technical talks on Open Source</strong>.</p>
+
+<p>You can invite me to one of your events as well: contact[at]pradeepsingh.xyz</p>
+
+<!--<p class="center">Yikes! Looks like I am not speaking anywhere. Mom? MOMMY?!</p>-->
+<ul class='post_list nav past nav--stacked'>
+{% for post in site.categories.speaking %}
+  <li class='talk post post--talk' itemscope itemtype="http://data-vocabulary.org/Event">
+  <a href="{{ post.url }}" itemprop="url">
+
+    <div itemprop="startDate" datetime="{{ post.date }}" class='post__meta'>
+      <date>{{ post.date | date: "%d %b" }}, <span class="normal">{{ post.date | date: "%Y" }}</span></date>
+      {% if post.future %} &middot;<strong> Upcoming</strong> 
+      {% else %} &middot; Past{% endif %}
+    </div>
+
+    <div class="post__title talk__title" itemprop="name">{{ post.title }}</div>
+
+    <div class="post__meta">
+      <span class="normal talk__event" itemprop="summary">{{ post.event }}</span>
+      &nbsp;&middot;&nbsp;
+      <span class="normal talk__location">{{ post.place }}</span>
+    </div>
+
+  </a>
+  </li>
+{% endfor %}
+</ul>
+
+<!-- FUTURE: highlight future ones -->

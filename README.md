@@ -1,2 +1,2 @@
-hiwy.in
+pradeepsingh.xyz
 =======

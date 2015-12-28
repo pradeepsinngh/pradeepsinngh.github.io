@@ -13,6 +13,9 @@ title: Pradeep Singh
   .right-hand {
     text-align: left;
   }
+  .header {
+    text-align: center;
+  }
   .footer {
     text-align: center;
     color: #000000;
@@ -43,18 +46,33 @@ title: Pradeep Singh
   </div>
 </div>
 -->
-  <div class="grid">
-  <div class="row" >
-    <div class="small-12 small-centered columns">
+  <header id="header_area" class="grid">
+  <div class="page" >
+    <div id="header">
       <div id="banner" class="grid__item two-fifths palm-one-whole">
-        <h1>Pradeep <strong>Singh</strong></h1>
-        <p class="tagline text--center no-bottom-margin grid__item one-whole beta">
-        <span class="delta">conciousness thinking itself into being</span> </br>
-        <span class="highlight block">Entrepreneur, Designer, Artist <span class="amp">&amp;</span> Public Speaker</span> </br>
-        <span class="delta">from <strong>Mumbai, India</strong></span></p> </br>
+        {% if page.slug == 'home' %}
+        <h1 id='logo'>King <strong>Sidharth</strong></h1>
+        {% else %}
+          <div id='logo'><a href="/">King <strong>Sidharth</strong></a></div>      
+        {% endif %}
+      </div><!-- #banner
+      --><nav id="main_navigation" class="navbar grid__item three-fifths palm-one-whole desk-right">
+      <ul class="nav nav--spaced palm-nav--stacked no-bottom-margin" data-nav-title="Navigation">
+        {% include nav_items.html %} 
+      </ul>
+      </nav>
+
+      {% if page.slug == 'home' %}
+      <p class="tagline text--center no-bottom-margin grid__item one-whole beta">
+      <span class="delta">conciousness thinking itself into being</span>
+      <span class="highlight block">Entrepreneur, Designer, Artist <span class="amp">&amp;</span> Public Speaker</span>
+      <span class="delta">from <strong>Mumbai, India</strong></span></p>
+      {% endif %}
+
+      
     </div>
   </div>
-</div>
+</header>
 
 
 <div class="row">

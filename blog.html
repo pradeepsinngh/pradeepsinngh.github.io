@@ -1,11 +1,42 @@
 ---
-layout: default
-title: Pradeep Singh
+layout: base
+title: "Notes by Pradeep"
 slug: "home"
 ---
 
+<div id=content_area class="grid">
+  <div class=area id=content>
+    <div id="latest" class="grid__item one-half palm-one-whole">
+      <h2 class="no-top-margin">Recent Notes</h2>
+      <ul class='post_list'>
+        {% assign posts = site.posts | exclude_post_category: 'speaking'%}
+        {% for post in posts limit:7 %}
+        <li class="post">
+        <a href="{{ post.url }}">
+          <div class="post__meta">
+            <date class="">{{ post.date | date: "%d %b, %Y" }}</date>
+            {% if post.category == 'design' %} &middot; Design{%endif%}
+          </div>
+          <span class="post__title">{{ post.title }}</span>
+        </a>
+        </li>
+        {% endfor %}
+        <li class="post">
+          <a class="post__title" href="/archives">Want More? Dig the Graveyards &rarr;</a>
+        </li>
+      </ul>
+    </div><!--
+    -->
+  
+=======
+layout: default
+title: Pradeep Singh
+type: page
+slug: home
+---
+
   <html>
-     <body style="background-color:#fcf4e8">
+     <!-- <body style="background-color:#fcf4e8"> -->
        
        <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -59,23 +90,36 @@ slug: "home"
       <span class="delta">conciousness thinking itself into being</span> </br>
       <span class="highlight block">Social Entrepreneur, Writer <span class="amp">&amp;</span> Public Speaker</span> </br>
       <span class="delta">from <strong>Mumbai, India</strong></span></p>
+>>>>>>> origin/master
     
-  </div>
-</div>
--->
-<!-- Google Tracking Code Start -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <div id="home__talks" class="grid__item two-thirds palm-one-whole">
+      <h2>Recent Talks</h2>
+      <ul class="post_list">
+        {% for post in site.categories.speaking limit: 3 %}
+        <li class='talk post post--talk' itemscope itemtype="http://data-vocabulary.org/Event">
+        <a href="{{ post.url }}" itemprop="url">
 
-  ga('create', 'UA-69070163-2', 'auto');
-  ga('send', 'pageview');
+          <div itemprop="startDate" datetime="{{ post.date }}" class='post__meta'>
+            <date>{{ post.date | date: "%d %b" }}, <span class="normal">{{ post.date | date: "%Y" }}</span></date>
+            {% if post.future %} &middot;<strong> Upcoming</strong> 
+            {% else %} &middot; Past{% endif %}
+          </div>
 
-</script>
-<!-- Google Tracking Code Finish -->
+          <div class="post__title talk__title" itemprop="name">{{ post.title }}</div>
 
+<<<<<<< HEAD
+          <div class="post__meta">
+            <span class="normal talk__event" itemprop="summary">{{ post.event }}</span>
+            &nbsp;&middot;&nbsp;
+            <span class="normal talk__location">{{ post.place }}</span>
+          </div>
+        </a>
+        </li>
+        {% endfor %}
+        <li class="talk post post--talk"><a href="/speaking" class="post__title">See All Talks &rarr;</a></li>
+      </ul>
+    </div><!-- #home__talks -->
+=======
 <div class="row">
 <div class="small-6 columns left-hand">
   <div class="row">
@@ -105,11 +149,11 @@ slug: "home"
   <h4>.person()</h4>
   <ul class="no-bullet">
     <li><a href="http://pradeepsingh.xyz/bio">bio</a> / life</li>
-    <li><a href="http://blog.pradeepsingh.xyz">94 Notes</a> / personal blog </li>
-    <li><a href="http://blog.pradeepsingh.xyz/reading">readings</a> / stuff I read <em> &amp; </em> watch </li>
-    <li><a href="http://blog.pradeepsingh.xyz/writing">writings</a> / blog, articles, notes</li>
-    <li><a href="http://blog.pradeepsingh.xyz/speaking">speaking</a> / talks, presentations</li>
-    <li><a href="http://blog.pradeepsingh.xyz/books">books</a> / read, reviews</li>
+    <li><a href="http://pradeepsingh.xyz/blog">94 Notes</a> / personal blog </li>
+    <li><a href="http://pradeepsingh.xyz/reading/reading">readings</a> / stuff I read <em> &amp; </em> watch </li>
+    <li><a href="http://pradeepsingh.xyz/writing">writings</a> / blog, articles, notes</li>
+    <li><a href="http://pradeepsingh.xyz/speaking">speaking</a> / talks, presentations</li>
+    <li><a href="http://pradeepsingh.xyz/books">books</a> / read, reviews</li>
     <li><a href="http://pradeepsingh.xyz/social-ventures">social / community </a> work</li>
     <li><a href="">travel</a></li>
     <li><a href="http://pradeepsingh.xyz/links">links</a> / resources</li>
@@ -136,8 +180,6 @@ slug: "home"
       
      <!-- <a href="contact@pradeepsingh.xyz">contact[AT]pradeepsingh[DOT]xyz</a> -->
     </p>
+>>>>>>> origin/master
   </div>
-</div>
-</font>
-</body>
-</html>
+</div><!-- #content_area -->

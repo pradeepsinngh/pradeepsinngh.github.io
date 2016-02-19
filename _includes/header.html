@@ -1,0 +1,53 @@
+
+<div id='header_area' class="grid">
+  <div class='area' id='header'>
+
+    <!-- <div class="grid__item one-quarter palm-one-whole"> -->
+     <div class="text--center grid__item one-whole beta">
+    {% if page.slug == 'home' %}
+      <h1 id=>94 Notes</h1>
+    {% else %}
+      <a href='{{ site.url }}' id=''></a>
+    {% endif %}
+    </div><!---
+
+    --><nav class="grid__item three-quarters palm-one-whole">
+      <ul class='nav no-bottom-margin desk-center' data-nav-title="Navigation">
+       <li>
+         <a href="http://pradeepsingh.xyz/">Home</a>
+         </li>
+         <li>
+        <a {% if page.slug == 'about' %}class="active"{% endif %} href='/about'>About</a>
+        </li>
+        <li>
+        <a {% if page.slug == 'home' %}class="active"{%endif%} href='/'>Blog</a>
+        </li>
+        
+        <li>
+        <a {% if page.slug == 'reading' %}class="active"{%endif%} href='/reading'>Read</a>
+        </li>
+        <li>
+        <a {% if page.slug == 'writing' %}class="active"{%endif%} href='/writing'>Write</a>
+        </li>
+        <li>
+        <a {% if page.category == 'talks' or page.slug == 'speaking' %}class="active"{% endif %} href='/speaking'>Speak</a>
+        </li>
+        <li>
+        <a {% if page.slug == 'books' %}class="active"{%endif%} href='/books'>Books</a>
+        </li>
+        
+        <li>
+        <a {% if page.slug == 'archives' %}class="active"{% endif %} href='/archives'>Archives</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- .nav-bar -->
+
+    {% if page.slug == 'home' %}
+    <div class="grid__item " id="introduction">
+       <p> A personal journal celebrating an unbiased perspective of self-discovery.<br> I write about my insights on <strong>life, travel, startups &amp; entrepreneurship</strong>. I wish to read these posts someday trying to understand how life evolved me over the period.</br> </p>
+      <p class="no-bottom-margin"><strong><strike>Joke</strike> Nomadic Engineer,</strong> he calls himself. <strong> Phew.</strong></p>
+    </div><!-- #introduction -->
+    {% endif %}
+  </div>
+</div><!-- #header_area -->

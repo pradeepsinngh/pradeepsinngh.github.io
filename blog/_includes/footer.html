@@ -1,0 +1,55 @@
+<div id='social_area' class="grid">
+  <div class='area' id='social'>
+    <ul class='nav nav--block grid__item one-whole no-bottom-margin' id='socialfollow'>
+      <li>Follow on </li>
+      <li class='twitter'>
+      <a href="https://twitter.com/nomadic_enggr" onclick="gae('Social', 'Twitter')" target="_blank">twitter</a>
+      </li>
+      <li><em> or </em></li>
+      <li class='instagram'>
+      <a href="https://instagram.com/nomadic_enggr/" onclick="gae('Social', 'Instagram')" target="_blank">instagram</a>
+      </li>
+      <li><em> or </em></li>
+      <li class='fb'>
+      <a href="https://www.facebook.com/pradeep.sinngh" onclick="gae('Social', 'Facebook')" target="_blank">facebook</a>
+      </li>
+    </ul>
+  </div>
+  <!-- #social.area -->
+</div>
+<!-- #social_area -->
+
+<div id='footer_area' class="grid">
+  <div class='area' id='footer'>
+    <p class="grid__item one-whole">&copy; 2012-16. | <a href="http://pradeepsingh.co.in/home/">Pradeep Singh.</p>
+  </div>
+  <!-- #footer -->
+</div>
+<!-- #footer_area -->
+
+<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic" rel="stylesheet" type="text/css">
+
+<script>
+  var documentData = {
+    'url': document.URL,
+    'title': "{{ page.title }}",
+    'category': {% if page.category %}"{{ page.category }}" {% else %} false {% endif %},
+    'environment': "{{ site.env }}"
+  }
+</script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="/assets/scripts/payload.js"></script>
+
+<!-- Google Analytics Code -->
+<!-- Google Tracking Code Start -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-69070163-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- Google Tracking Code Finish -->
+<!--//Add google Analytics code here. -->

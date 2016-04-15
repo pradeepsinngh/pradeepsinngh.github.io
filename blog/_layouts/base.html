@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head {% if page.type == 'post' %} prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"{% endif %}>
+    <title>{{ page.title }}</title>
+    <!-- stylesheets -->
+    <link href="/assets/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <!--<link rel="icon" type="image/x-icon" href="{{ site.url }}" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8"> 
+    <!-- scripts -->
+    <!-- meta -->
+         
+
+   <!-- <meta property="fb:app_id"               content="fb app id" /> -->      
+    {% if page.image %}
+    <!-- <meta property="og:image"                content="{{ page.image }}"> -->
+    {% endif %}      
+ <meta property="og:image"                content="addrss of logo"> 
+    {% if page.type == 'post' %}
+    <meta property="og:type"                 content="article"> 
+    <meta property="og:url"                  content="http://blog.pradeepsingh.xyz{{ page.url }}/">
+    <meta property="og:site_name"            content="{{ site.name }}">
+    <meta property="og:title"                content="{{ page.title }}">
+    <meta property="article:author"          content="http://www.pradeepsingh.co.in">
+    {% endif %}
+    {% if page.slug == 'home' %}
+    <meta property="og:type"                 content="website"> 
+    <meta property="og:url"                  content="{{ site.url  }}"> 
+    <meta property="og:title"                content="{{ site.name }}">
+    {% endif %}
+    <!-- others -->
+  
+  <body class="{{ page.slug }} {{ page.category }}" onload="return setTimeout('social_share_count()', 2000);"> 
+    {% include header.html %}
+    
+    <!-- Google Tracking Code Start -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-69070163-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- Google Tracking Code Finish -->
+    
+    {{ content }}
+    {% include footer.html %}
+  </body>
+</html>

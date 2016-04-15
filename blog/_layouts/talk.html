@@ -1,0 +1,56 @@
+---
+layout: base
+---
+<div id="headline_area" class="grid">
+  <div class="area">
+    <div class="post talk--single grid__item one-whole center" itemscope itemtype="http://data-vocabulary.org/Event">
+      <span>On</span>
+
+      <h1 class="post__title">
+        {{ page.title }}
+      </h1>
+
+      <span>at</span>
+
+      <h2 class="talk__event" itemprop="summary">
+        {% if page.evlink %}
+        <a href="{{ page.evlink }}" itemprop="link">
+        {% endif %}
+          {{ page.event }}
+        {% if page.evlink %}
+        </a>
+        {% endif %}
+      </h2>
+
+      <span class="post__meta talk__location" itemprop='location'>{{ page.place }}</span>
+
+      <span> on </span>
+
+      <span itemprop="startDate" datetime="{{ page.date }}" class="post__meta talk__date">
+      {{ page.date | date: "%d %b" }},
+      <strong>{{ page.date | date: "%Y" }}</strong>
+      </span>
+
+    </div>
+  </div>
+</div><!-- #headline_area -->
+<div id=event_detail_area class="grid">
+  <div class=area id=event_detail>
+    <div class='post_content grid__item one-whole'>
+      
+      <!-- Google Tracking Code Start -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-69070163-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- Google Tracking Code Finish -->
+      
+      {{ content }}            
+    </div>
+  </div>
+</div><!-- #event_detail_area -->
+

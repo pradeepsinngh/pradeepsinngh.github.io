@@ -1,0 +1,45 @@
+# blog.pradeepsingh.xyz — Jekyll Configuration File
+
+# Site Setting
+url: http://www.blog.pradeepsingh.xyz
+name: 94 Miles
+description: Notes of a Young Social Entrepreneur from India.
+encoding: UTF-8
+permalink: /:categories/:title
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+      type: "post"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "design"
+      type: "post"
+    values:
+      layout: "post"
+      category: "design"
+  -
+    scope:
+      path: "speaking"
+      type: "post"
+    values:
+      layout: "talk"
+      categories: "speaking"
+
+
+# Development Settings
+exclude: [sass, vendor, config.rb, Readme.markdown, Gemfile, Gemfile.lock, Felicia_Simon.ase, .htaccess, scss, assets/vendor]
+gems: [jekyll-minify-html]
+sass:
+  sass_dir: assets/scss/
+  css_dir: assets/css/
+  style: :compressed
+  line_comments: false
+
+# MODULES
+# Jekyll Environment Variables
+env: development # For production: $ export JEKYLL_ENV=production

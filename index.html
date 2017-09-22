@@ -23,7 +23,7 @@
     font-family: palatino,'Lato', Verdana, Helvetica, sans-serif;
     font-size: 26px;
     }
-    papertitle {
+    project {
     font-family: palatino,'Lato', Verdana, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 700
@@ -104,22 +104,20 @@ I have previously worked on projects in the fields of Signal and Image Processin
   
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
-    <tbody><tr onmouseout="friendly_stop()" onmouseover="friendly_start()">
+    <tbody><tr onmouseover="friendly_start()">
       <td width="25%">
-        <div class="two" id="friendly_image" style="opacity: 0;"><img src="images/fft.gif"></div>
+        <div class="one" id="friendly_image" style="opacity: 0;"><img src="images/fft.gif"></div>
         <script type="text/javascript">
         function friendly_start() {
         document.getElementById('friendly_image').style.opacity = "1";
         }
-        function friendly_stop() {
-        document.getElementById('friendly_image').style.opacity = "0";
-        }
-        friendly_stop()
+      
         </script>
       </td>
+	    
       <td valign="top" width="75%">
         <p><a href="MazumdarHPG17.pdf">
-        <papertitle>Development of Signal Processing Algorithms using OpenCL for FPGA based Architecture</papertitle></a><br>
+        <project>Development of Signal Processing Algorithms using OpenCL for FPGA based Architecture</papertitle></a><br>
        <!--   <a href="https://homes.cs.washington.edu/~amrita/">Amrita Mazumdar</a>, <a href="http://homes.cs.washington.edu/~armin/">Armin Alaghi</a>, <strong>Jonathan T. Barron</strong>, <a href="https://www.cs.unc.edu/~gallup/">David Gallup</a>, <a href="https://homes.cs.washington.edu/~luisceze/">Luis Ceze</a>, <a href="https://homes.cs.washington.edu/~oskin/">Mark Oskin</a>, <a href="http://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a>  <br>
         <em>High-Performance Graphics (HPG)</em>, 2017 <br>
         <a href="https://sampa.cs.washington.edu/projects/vr-hw.html">project page</a>
@@ -146,7 +144,7 @@ I have previously worked on projects in the fields of Signal and Image Processin
       </td>
       <td valign="top" width="75%">
         <!-- <p><a href="GharbiSIGGRAPH2017.pdf"> -->
-        <papertitle>Face Recognition using DCT</papertitle></a><br>
+        <project>Face Recognition using DCT</papertitle></a><br>
           <!--<a href="http://www.mgharbi.com">Michaël Gharbi</a>, <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>, <strong>Jonathan T. Barron</strong>, <a href="https://people.csail.mit.edu/hasinoff/">Samuel W. Hasinoff</a>, <a href="http://people.csail.mit.edu/fredo/">Frédo Durand </a> <br>
         <em>SIGGRAPH</em>, 2017 <br>
         <a href="https://groups.csail.mit.edu/graphics/hdrnet/">project page</a>

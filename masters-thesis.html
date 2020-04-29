@@ -1,58 +1,204 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Modeling Facilitation in Visual Neurons</title>
-    <meta property="og:title" content="(project name) – (subtitle)">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="(github page url)">
-    <meta property="og:image" content="(github page url)/og_logo.png">
-    <meta property="og:description" content="(one sentence description)">
-    <link href="lib/normalize.css" type="text/css" rel="stylesheet">
-    <link href="lib/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
-    <link href="main.css" type="text/css" rel="stylesheet">
-    <script src="//use.typekit.net/ulc1wme.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
+  <meta name=viewport content=“width=800”>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+	  
+    /* Color scheme stolen from Sergey Karayev */
+    a {
+    color: #1772d0;
+    text-decoration:none;
+    }
+    a:focus, a:hover {
+    color: #f09228;
+    text-decoration:none; 
+    }
+    body,td,th,tr,p,a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px
+    }
+    strong {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+    heading {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+    }
+    project {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600
+    }
+    name {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 32px;
+    }
+    .one
+    {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    }
+    .two
+    {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+     transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+     -webkit-transition: opacity .2s ease-in-out;
+    }
+    span.highlight {
+        background-color: #ffffd0;
+    }
+  </style>
+	  
+  <link rel="icon" type="image/png" href="seal_icon.png">
+  <title>Masters Thesis - Pradeep Singh, CSRC, San Diego State University</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   </head>
+
+	
   <body>
-    <div class="header"><div class="container">
-      <h1 class="logo">Modeling Predictive aspect of Response Facilitation in Small-target-sensitive Visual Neurons</h1>
-      <div class="tagline">
-        Modeling Facilitation in Visual Neurons
-      </div>
-      <div class="cta">
-          <a href="(download link)" role="button"><i class="fa fa-download"></i> Download</a>
-          <a href="(github page url)" role="button"><i class="fa fa-github"></i> View on GitHub</a>
-      </div>
-      <div class="demo">
-          (demo)
-      </div>
-    </div></div>
+  <table width="950" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+    <td>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="70%" valign="middle">
+        <p align="center">
+          <name>Models for Propagating Facilitation in the Insect Visual System</name>
+        </p>
+        <p>Detecting and tracking moving targets within a visual scene is a complex task. Over thousands of years, 
+          many species of animals like flying insects have evolved neural mechanisms for tracking path or location 
+          of flying targets that move against the visually cluttered background. </p>
+          
+          <p>
+          Small target motion-detecting (STMD) neurons found in the visual pathway of flying insects display 
+          remarkable selectivity and sensitivity to small moving targets and are thought to support these mechanisms. 
+          Contributing to their sensitivity is a form of facilitation, in which the responsiveness of an STMD is 
+          enhanced by prior exposure to a small target moving along a continuous path in visual space. 
+          The locus of facilitation in the receptive field is found to be local to the area of the target and to 
+          continue propagating in the direction of target motion even after a stimulus ceases. We are modeling this 
+          phenomenon with the propagation of traveling waves in densely interconnected, retinotopic layers of cells. 
+          We hypothesize that waves are initiated and reinforced by the presence of a moving target stimulus, and 
+          the network, in turn, interacts with STMDs to modulate their excitability. Membrane potentials travel too 
+          fast to play this role, so we have studied and modeled propagating calcium waves as a possible mechanism. </p>
+          
+          <p>
+          Accordingly, we have proposed two models that could be the biological substrate for this sort of mechanism: <br>
+          1) a network of astrocyte-like glia cells, and <br>
+          2) a network of neurons; both in which calcium waves are initiated by target stimuli and propagate via diffusion 
+          with the participation of regenerative mechanisms.  </p>
 
-    <div class="main"><div class="container">
-      <div class="subtagline">
-        I study, model and characterize visual processing in brain by developing computational models.
-      </div>
 
-      <ul class="features">
-          (first contact)
-      </ul>
+        </td>
+      </tr>
+      </table>
+ 
+   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+   <heading>Online Courses</heading>
+    
+    <tr>      
+	<td valign="top" width="75%">
+	  <ul>
+  	   <li><a href = "https://www.youtube.com/playlist?list=PL8FFE3F391203C98C">Dan Jurafsky & Chris Manning: Natural Language Processing</a> </br>[great intro video series]</li>
+  	   <li><a href = "http://cs224d.stanford.edu/syllabus.html">Stanford CS224d: Deep Learning for Natural Language Processing </a> </br>[more advanced ML algorithms, deep learning, and NN architectures for NLP]</li>
+  	   <li><a href = "https://www.youtube.com/playlist?list=PLLssT5z_DsK8BdawOVCCaTCO99Ya58ryR">Coursera: Introduction to Natural Language Processing </a> </br>[intro NLP course offered by the University of Michigan]</li>
+	 </ul>  
+      </td>
+    </tr>  
+	   
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+   <heading>Libraries and open source</heading>
+	   
+    <tr>
+      <td valign="top" width="75%">
+	 <ul>
+           <li>spaCy (<a href="https://spacy.io/">website</a>, <a href="https://explosion.ai/blog/">blog</a>) [Python; 
+		   emerging open-source library with <a href="https://spacy.io/usage/spacy-101">fantastic usage examples</a>, 
+		   API documentation, and <a href="https://spacy.io/universe/">demo applications</a>]</li>
+           <li></li>
+           <li></li>
+         </ul> 
+       </td>
+    </tr>
 
-      <div class="examples">
-          (examples)
-      </div>
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+   <heading>Books</heading>
+	   
+    <tr>
+      <td valign="top" width="75%">
+ 	<ul>
+  	   <li><a href = "https://www.youtube.com/playlist?list=PL8FFE3F391203C98C">Dan Jurafsky & Chris Manning: Natural Language Processing</a> </br>[great intro video series]</li>
+  	   <li><a href = "http://cs224d.stanford.edu/syllabus.html">Stanford CS224d: Deep Learning for Natural Language Processing </a> </br>[more advanced ML algorithms, deep learning, and NN architectures for NLP]</li>
+  	   <li><a href = "https://www.youtube.com/playlist?list=PLLssT5z_DsK8BdawOVCCaTCO99Ya58ryR">Coursera: Introduction to Natural Language Processing </a> </br>[intro NLP course offered by the University of Michigan]</li>
+	 </ul>       
+	</td>
+    </tr>
+	
+	
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+   <heading>Active blogs</heading>
+	   
+    <tr>
+      <td valign="top" width="75%">
+	  <p>Built a end-to-end machine translation pipeline using recurrent neural network which takes English text & 
+             return it's French translation. Experimented with various models: simple RNN, RNN with Embedding, 
+             Bidirectional RNN, Encoder-Decoder RNN & achieved accuracy of 98%. </p>
+          <p></p>
+	   <a href="https://github.com/pradeepsinngh/Machine-Translation-with-Keras/blob/master/README.md">Abstract</a>
+            /
+	   <a href="http://pradeepsinngh.github.io/documents/Neural_Machine_Translation.pdf">Project Report</a>
+	   /
+           <a href="https://github.com/pradeepsinngh/Machine-Translation">Code</a>
+           / 
+	   <a href="https://github.com/pradeepsinngh/Machine-Translation-with-Keras/tree/master/data">Dataset</a>
+           <p></p>
+        </td>
+    </tr>
+    
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+   <heading>Miscellaneous</heading>
 
-      (black triangle)
-
-    </div></div>
-
-    <div class="footer"><div class="container">
-      <a class="ka-logo" href="https://www.khanacademy.org/"><img src="khan-academy.png" alt="Khan Academy" width="180" height="17"></a>
-      <span class="created-by">Created by (authors)</span>
-    </div></div>
-
-    <script>
-        // TODO maybe google analytics
-    </script>
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+   <heading>DIY projects and data sets</heading>
+	
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+   <heading>NLP on social media</heading>
+	   
+      
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td>
+        <br>
+	<hr>
+        <p align="center">
+		<font size="2">
+			<quote>"If we want machines to think, we need to teach them to see" ~ Fei-Fei Li</quote>
+		</font>
+        </p>
+        </td>
+      </tr>
+      </table>
+	   <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69070163-2"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-69070163-2');
+      </script>
+    </td>
+    </tr>
+  </table>
   </body>
 </html>
